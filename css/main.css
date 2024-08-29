@@ -1,0 +1,245 @@
+/* font */
+@font-face {
+    font-family: "nsr";
+    src: url(../font/NanumSquareR.ttf);
+}
+@font-face {
+    font-family: "nsb";
+    src: url(../font/NanumSquareB.ttf);
+}
+@font-face {
+    font-family: "ng";
+    src: url(../font/NanumGothic.ttf);
+}
+
+
+/* header */
+header{
+    width: 100%;
+    height: 100px;
+}
+header .container-md{
+    display: flex;
+    justify-content: space-between;
+}
+.main_menu{
+    font-family: "nsr";
+    font-weight: 900;
+    font-size: 20px;
+    height: 100px;
+    display: flex;
+    margin-top: 20px;
+}
+.main_menu li{
+    width: 150px;
+    text-align: center;
+    line-height: 50px;
+    z-index: 999;
+}
+header .sub {
+    display: none;
+    font-family: "nsr";
+    font-weight: 300;
+    font-size: 16px;
+    color: #ff330f;
+}
+header .sub li :hover{
+    background-color: #3f3f3f;
+    color: #fff;
+}
+ul li a{
+    display: block;
+}
+header .submenu{
+    display: flex;
+    gap: 0 30px;
+    margin-top: 35px;
+}
+header .menu_bar i{
+    width: 60px;
+    height: 60px;
+    padding: 15px 10px;
+    cursor: pointer;
+    display: none;
+    margin-top: 30px;
+}
+.menu_box{
+    width: 100%;
+    height: 400px;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background-color: #3f3f3f;
+    color: #fff;
+    z-index: 999;
+    display: flex;
+    justify-content: space-evenly;
+}
+.menu_box .main_menu{
+    font-family: "nsr";
+    font-size: 20px;
+}
+.menu_box .sub{
+    font-family: "ng";
+    font-size: 16px;
+    color: #ff330f86;
+    font-weight: 100;
+}
+.menu_box .submenu{
+    display: flex;
+    gap: 0 30px;
+    margin-top: 35px;
+}
+.menu_box button{
+    font-size: 20px;
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    color: #fff;
+}
+/* main */
+main{
+    margin-bottom: 230px;
+}
+
+section .img_box{
+    margin-bottom: 30px;
+}
+section .text{
+    margin-bottom: 100px;
+}
+section h3{
+    font-family: "nsr";
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    line-height: 130%;
+}
+section h4{
+    margin: 10px 0;
+    font-family: "nsr";
+    font-weight: 800;
+    font-size: 20px;
+}
+section span,
+section p{
+    font-family: "ng";
+    font-weight: 300;
+}
+section h2{
+    text-align: center;
+    font-family: "nsr";
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 50px;
+}
+
+.s3{
+    text-align: center;
+    margin-top: 230px;
+}
+
+/* footer */
+footer{
+    width: 100%;
+    background-color: #3f3f3f;
+    color: #fff;
+    font-family: "ng";
+    text-align: center;
+    margin-top: 230px;
+}
+footer .f_menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+footer .row{
+    margin-top: 30px;
+}
+footer .f_fuji{
+    margin-bottom: ;
+}
+footer .f_fuji li{
+    line-height: 200%;
+}
+footer .text_box h3{
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+footer .fam{
+    display: flex;
+    justify-content: center;
+    gap: 0 20px;
+    margin-top: 30px;
+}
+
+.top_btn{
+    width: 50px;
+    height: 50px;
+    background-color: #ff330f;
+    color: #fff;
+    border-radius: 50%;
+    border: none;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    font-family: "ng";
+    text-align: center;
+    /* display: none; */
+    z-index: 999;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1200px) {
+    header .main_menu,
+    header .submenu{
+        display: none;
+    }
+    header .menu_bar i{
+        display: block;
+    }
+}
+@media screen and (max-width:767px){
+    header .menu_bar{
+        margin-right: 50px;
+    }
+    .img_box img{
+        margin: 0 auto;
+    }
+    .text{
+        text-align: center;
+    }
+    footer .f_logo img{
+        margin: 0 auto;
+    }
+    footer .f_fuji{
+        margin: 30px 0;
+    }
+    footer .f_copy{
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width:575px) {
+    footer .f_menu{
+        font-size: 14px;
+    }
+    footer .f_logo{
+        margin-bottom: 20px;
+    }
+    footer .f_fuji{
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width:430px) {
+    footer .f_menu{
+        font-size: 14px;
+    }
+    footer .f_logo{
+        margin-bottom: 30px;
+    }
+    footer .f_fuji{
+        margin-bottom: 30px;
+    }
+}
